@@ -262,7 +262,7 @@ FUNCTION {format.names}
                 if$
                 t "{\sc others}" =
                     { " {\sc et~al\mbox{.}}" * } % jrh: avoid spacing problems
-                    { " {\sc and} " * t * } % from Chicago Manual of Style
+                    { " {\sc und} " * t * } % from Chicago Manual of Style
                   if$
                }
                if$
@@ -292,7 +292,7 @@ FUNCTION {my.full.label}
                 if$
                 t "others" =
                     { " et~al\mbox{.}" * } % jrh: avoid spacing problems
-                    { " and " * t * } % from Chicago Manual of Style
+                    { " und " * t * } % from Chicago Manual of Style
                   if$
                }
                if$
@@ -325,7 +325,7 @@ FUNCTION {format.names.fml}
                   if$
                   t "{others}" =
                         { " {et~al\mbox{.}}" * }
-                        { " {and} " * t * }
+                        { " {und} " * t * }
 %                       { " {\&} " * t * }
                       if$
                 }
@@ -709,7 +709,7 @@ FUNCTION {format.crossref.editor}
     'skip$
     { editor #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
         { " et~al\mbox{.}" * }		% jrh: avoid spacing problems
-        { " and " * editor #2 "{vv~}{ll}" format.name$ * }
+        { " und " * editor #2 "{vv~}{ll}" format.name$ * }
       if$
     }
       if$
@@ -777,7 +777,7 @@ FUNCTION {format.lab.names}
 	{ nameptr numnames =
 	    { s nameptr "{ff }{vv }{ll}{ jj}" format.name$ "others" =
 		{ " et~al\mbox{.}" * }		% jrh: avoid spacing problems
-		{ " and " * s nameptr "{vv~}{ll}" format.name$ * }
+		{ " und " * s nameptr "{vv~}{ll}" format.name$ * }
 	      if$
 	    }
 	    { ", " * s nameptr "{vv~}{ll}" format.name$ * }

@@ -1215,12 +1215,12 @@ works requires prior specific permission.
 	       {\end@dblfloat}
 %
 \newcounter{table}
-\renewcommand\thetable{\Roman{table}}
+\renewcommand\thetable{\arabic{table}}
 \def\fps@table{tbp}
 \def\ftype@table{2}
 \def\ext@table{lot}
 \def\tablename{Table}
-\def\fnum@table{\ifcontinued\addtocounter{table}{-1} Table~\thetable---{\it Continued} \else Table~\thetable\fi}
+\def\fnum@table{\ifcontinued\addtocounter{table}{-1} Tabelle~\thetable---{\it Continued} \else Tabelle~\thetable\fi}
 \newenvironment{table}
                {\@float{table}}
                {\end@float}
